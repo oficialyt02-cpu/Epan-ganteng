@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Valentine Level 14</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Press Start 2P', cursive;
+  background:#1a1a1a;
+  color:white;
+  overflow:hidden;
+}
+
+/* OPENING */
+.opening{
+  position:fixed;
+  inset:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#000;
+  z-index:999;
+  text-align:center;
+}
+
+.opening h1{
+  font-size:22px;
+  margin-bottom:20px;
+  color:#ff4d6d;
+  text-shadow:4px 4px 0 #000;
+}
+
+.opening p{
+  font-size:12px;
+  margin-bottom:30px;
+  color:#ffffff;
+}
+
+.pixel-btn{
+  padding:15px 25px;
+  border:none;
+  background:#ff4d6d;
+  color:white;
+  cursor:pointer;
+  font-size:12px;
+  box-shadow:6px 6px 0 #000;
+  transition:0.2s;
+}
+
+.pixel-btn:hover{
+  transform:translate(-4px,-4px);
+  box-shadow:10px 10px 0 #000;
+}
+
+/* MAIN CONTENT */
+.main{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:30px;
+  opacity:0;
+  transition:1s;
+}
+
+.card{
+  background:#2a2a2a;
+  padding:30px;
+  border:4px solid #ff4d6d;
+  box-shadow:8px 8px 0 #000;
+  max-width:600px;
+}
+
+.card h2{
+  font-size:18px;
+  margin-bottom:20px;
+  color:#ff4d6d;
+}
+
+.card p{
+  font-size:12px;
+  line-height:1.8;
+  color:#f5f5f5;
+  margin-bottom:15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- OPENING -->
+<div class="opening" id="opening">
+  <div>
+    <h1>LEVEL 14 ❤️</h1>
+    <p>VALENTINE EVENT UNLOCKED</p>
+    <button class="pixel-btn" onclick="startGame()">PRESS START</button>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main" id="main">
+  <div class="card">
+    <h2>Happy Valentine’s Day from Epan. ❤️<h2/>
+    <p>
+      Hari ini bukan cuma soal cokelat atau bunga.
+      Ini tentang kamu yang terus tumbuh,
+      makin dewasa, makin kuat, dan tetap jadi versi terbaik dari diri sendiri.
+    </p>
+    <p>
+      Semoga di level baru ini,
+      semua impian kamu satu per satu tercapai.
+      Lebih banyak senyum,
+      lebih banyak kebahagiaan,
+      dan lebih banyak momen manis.
+    </p>
+    <p>
+       You can bloom anywhare just like flowers.
+      keep growing.
+    </p>
+  </div>
+</div>
+
+<script>
+function startGame(){
+  document.getElementById("opening").style.display="none";
+  document.getElementById("main").style.opacity="1";
+  document.body.style.overflow="auto";
+}
+</script>
+
+</body>
+</html>
